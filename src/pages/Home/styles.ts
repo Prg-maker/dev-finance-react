@@ -19,17 +19,63 @@ export const Header = styled.div`
     margin-top: 42px;
     display: flex;
     align-items: center;
+
+
+
   }
 
+
+  .wrapperCard{
+    width: 100%;
+    margin-top: 104px;
+
+
+    
+  }
   .c-cards{
     display: flex;
-    margin-top: 104px;
+    justify-content: center;
+    margin: 0 25px;
+
+
+
+
+
+    >div{
+      &:not(:first-child){
+        margin-left: 1.2rem;
+      }
+    }
+    
+    @media (max-width: 800px) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      >div{
+      &:not(:first-child){
+        margin:0 ;
+      }
+
+      &:not(:last-child){
+        margin-bottom: 1.2rem;
+
+      }
+     }
+    }
+    
+
+    @media (max-width: 360px) {
+    }
   }
 
 `
 
 
-export const DevFinanceImg = styled.img``
+export const DevFinanceImg = styled.img`
+
+ 
+`
 
 export const MoneyImg = styled(MdOutlineAttachMoney)`
   width: 25px;
@@ -38,7 +84,7 @@ export const MoneyImg = styled(MdOutlineAttachMoney)`
   margin-left: 70px;
   margin-bottom: 6px;
 
-  @media(max-width: 320px){
+  @media(max-width: 400px){
     display: none;
   }
 `

@@ -3,10 +3,9 @@ import styled from "styled-components";
 import {MdOutlineAttachMoney} from 'react-icons/md'
 
 export const Container = styled.div`
-  width: 352px;
+  width: 22rem;
   height: 136px;
   background-color: #49AA26;
-  margin-left: 32px;  
   border-radius: 5px;
   
 
@@ -15,6 +14,10 @@ export const Container = styled.div`
     justify-content: space-between;
     margin: 21px 18px 14px 32px;
   }
+
+  @media (max-width: 360px) {
+    width: 17rem;
+  } 
 
 `
 

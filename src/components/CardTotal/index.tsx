@@ -7,7 +7,7 @@ import {
 
 interface PropsCard{
   title: string;
-  money: number;
+  money: string;
 }
 
 export function CardTotal({
@@ -17,7 +17,7 @@ export function CardTotal({
   return(
     <Container>
       
-      <div>
+      <div >
         <Title>{title}</Title>
         <Icon/>
       </div>

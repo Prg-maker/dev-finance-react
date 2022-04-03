@@ -3,10 +3,9 @@ import {AiOutlineArrowUp} from 'react-icons/ai'
 
 
 export const Container = styled.div`
-  width: 352px;
+  width: 22rem;
   height: 136px;
   background-color: #FFFFFF;
-  margin-left: 32px;  
   border-radius: 5px;
   
 
@@ -14,7 +13,14 @@ export const Container = styled.div`
     display: flex ;
     justify-content: space-between;
     margin: 21px 18px 14px 32px;
+
+  
   }
+
+  @media (max-width: 360px) {
+    width: 17rem;
+    margin: 0;
+  } 
 
 `
 

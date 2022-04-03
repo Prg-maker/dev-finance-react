@@ -21,23 +21,26 @@ export function Home(){
           <DevFinanceImg src={Img} alt="devFinance"/>
           <MoneyImg/>
         </div>
+        <div className='wrapperCard'>
 
-        <div className='c-cards'> 
-          <Cards
-            title='entradas'
-            money={123}
-          />
-          <Cards
-            title='Saídas'
-            money={123}
-          />
+          <div className='c-cards'> 
+            <Cards
+              title='entradas'
+              money='17.400.00' 
+            />
+            <Cards
+              title='Saídas'
+              money='1.259,00'
+            />
 
-          <CardTotal
-            title='Total'
-            money={123}
-          />
+            <CardTotal
+              title='Total'
+              money='16.141,00'
+            />
+          </div>
+
         </div>
-
+        
        
       </Header>
 

@@ -7,7 +7,7 @@ import {
 
 interface PropsCard{
   title: string;
-  money: number;
+  money: string;
   nameIcon?: string;
 }
 
@@ -18,7 +18,7 @@ export function Cards({
   return(
     <Container>
       
-      <div>
+      <div className={title}>
         <Title className={title}>{title}</Title>
         <Icon  className={title}/>
       </div>
