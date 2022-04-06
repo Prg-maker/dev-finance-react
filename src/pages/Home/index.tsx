@@ -1,9 +1,14 @@
 import {
   Container,
   Header,
-  DevFinanceImg,
   MoneyImg,
+  Main,
+  Table,
+  Thead
 } from './styles'
+
+
+import {Info} from '../../components/Info'
 
 
 import {Cards} from '../../components/Cards'
@@ -18,7 +23,7 @@ export function Home(){
       <Header>
 
         <div className='devFinance'>
-          <DevFinanceImg src={Img} alt="devFinance"/>
+          <img src={Img} alt="devFinance"/>
           <MoneyImg/>
         </div>
         <div className='wrapperCard'>
@@ -40,9 +45,41 @@ export function Home(){
           </div>
 
         </div>
-        
-       
+
       </Header>
+
+      <Main>
+
+        <Table>
+          <Thead>
+            <tr>
+              <th>Descrição</th>
+              <th>Valor</th>
+              <th>Data</th>
+            </tr>
+          </Thead>
+
+
+          <tbody>
+            <Info
+              money={123}
+              data={new Date().toDateString()}
+              title={'Desenvolvimento de um site'}
+              key={123}
+            />
+            <Info
+              money={-123}
+              data={new Date().toDateString()}
+              title={'Desenvolvimento de um site'}
+              key={1246}
+            />
+          </tbody>
+
+        </Table>
+
+
+
+      </Main>
 
     </Container>
   )

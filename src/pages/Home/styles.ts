@@ -4,7 +4,7 @@ import {MdOutlineAttachMoney} from 'react-icons/md'
 
 export const Container  = styled.div`
   height: 100%;
-  background: #F0F2F5;
+  background: #C4C4C4;
 `
 
 
@@ -72,10 +72,6 @@ export const Header = styled.div`
 `
 
 
-export const DevFinanceImg = styled.img`
-
- 
-`
 
 export const MoneyImg = styled(MdOutlineAttachMoney)`
   width: 25px;
@@ -88,3 +84,48 @@ export const MoneyImg = styled(MdOutlineAttachMoney)`
     display: none;
   }
 `
+
+export const Main = styled.main`
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+`
+
+export const Table = styled.table`
+  width: 62.5rem;
+  margin:  120px 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+
+  @media(max-width: 400px){
+    display: none;
+  }
+
+
+  >tbody{
+    margin-top: 20px;
+
+  }
+`
+
+export const Thead = styled.thead`
+
+
+  >tr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: normal;
+   th{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #969CB3;
+   }
+  }
+
+`
+
